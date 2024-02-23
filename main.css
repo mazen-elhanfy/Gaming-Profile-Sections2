@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1400px;
+    height: 2200px;
+    margin: 30px auto;
+    background-color: #ddd;
+    position: relative;
+}
+.main{
+    width: 90%;
+    height: 90%;
+    /* border: 1px solid #00f; */
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.main>div{
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+.first{
+    height: 15%;
+}
+.first img{
+width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    box-shadow: 1px 1px 13px 0px #000;
+}
+.first .level{
+    font-weight: bold;
+        text-transform: capitalize;
+        font-size: 25px;
+        position: absolute;
+        left: 6.8%;
+        top: 50%;
+}
+.first .bar{
+    width: 150px;
+        height: 20px;
+        background-image: linear-gradient(to right, #009688 80%, #ddd 80%);
+        position: absolute;
+        left: 4%;
+        top: 65%;
+        border-radius: 5px;
+}
+.first .one{
+    text-transform: capitalize;
+        position: absolute;
+        left: 3.8%;
+        top: 80%;
+}
+.first .line{
+    width: 2px;
+    height: 100%;
+    background-color: #ddd;
+    position: absolute;
+    left: 20%;
+    top: 0;
+}
+.first h2{
+position: absolute;
+    left: 24%;
+    top: 5%;
+}
+.first .text{
+    width: 50%;
+    height: 15%;
+    position: absolute;
+    left: 24%;
+    top: 30%;
+    text-transform: capitalize;
+}
+.first .days{
+    text-transform: capitalize;
+        position: absolute;
+        left: 88%;
+        top: 90%;
+}
+.second,
+.third{
+    height: 12%;
+}
+.second .head{
+    width: 120px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: #607d8a;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        text-transform: capitalize;
+}
+.second .main{
+    width: 90%;
+        height: 70%;
+        position: absolute;
+        left: 3%;
+        top: 30%;
+        /* border: 1px solid #00f; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+}
+.second .main>div{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+.green{
+    color: #009688;
+}
+.red{
+    color: crimson;
+}
+.blue{
+    color: #6f98f3;
+}
+.third .head {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #607d8a;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    text-transform: capitalize;
+}
+.third .main{
+    width: 94%;
+        height: 60%;
+        /* border: 1px solid #00f; */
+        position: absolute;
+        left: 3%;
+        top: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+}
+.third .main > img{
+    width: calc(87% / 12);
+    height: 50px;
+}
+.fourth{
+    height: 7%;
+}
+.fourth .head{
+        width: 120px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-color: #607d8a;
+            position: absolute;
+            left: 5%;
+            top: 5%;
+            text-transform: capitalize;
+}
+.fourth .one{
+    position: absolute;
+    left: 3%;
+    top: 60%;
+    text-transform: capitalize;
+}
+.fifth{
+    height: 30%;
+}
+.fifth .head {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #607d8a;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    text-transform: capitalize;
+}
+.fifth .main{
+    width: 94%;
+        height: 70%;
+        /* border: 1px solid #00f; */
+        position: absolute;
+        left: 3%;
+        top: 20%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+}
+.fifth .main>div{
+    width: 100%;
+        height: calc(93% / 6);
+        border-bottom: 1px solid #ddd;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        position: relative;
+}
+.fifth .main .six{
+    border-bottom: 0px;
+}
+.fifth .main .one::after,
+.fifth .main .two::after,
+.fifth .main .four::after,
+.fifth .main .six::after{
+    content: "yes";
+    color: green;
+    position: absolute;
+    left: 97%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.fifth .main .three::after,
+.fifth .main .five::after{
+        content: "No";
+            color: red;
+            position: absolute;
+            left: 97%;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+}
